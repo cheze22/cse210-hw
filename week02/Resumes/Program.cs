@@ -34,7 +34,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Crear trabajos
+       
         Job job1 = new Job();
         job1._jobTitle = "Software Engineer";
         job1._company = "Microsoft";
@@ -47,13 +47,13 @@ public class Program
         job2._startYear = 2022;
         job2._endYear = 2023;
 
-        // Crear el resume
+        
         Resume myResume = new Resume();
         myResume._name = "Allison Rose";
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
-        // Mostrar el resume completo
+        
         myResume.Display();
     }
 }
