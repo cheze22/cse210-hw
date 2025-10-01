@@ -18,8 +18,7 @@ public class ReflectionActivity : Activity
             Console.WriteLine("Prompt: " + prompt + "\n");
             Console.WriteLine("Reflect on the following questions:");
 
-            var questionPool = _prompts; // reuse PromptManager by creating a fresh one? We'll create a separate one in Program and pass in reflectionQuestions.
-            // Actually reflection questions were passed as a separate PromptManager from Program; but to simplify we will create a local list here.
+            var questionPool = _prompts; 
 
             var questions = new PromptManager(new List<string> {
                 "Why was this experience meaningful to you?",
